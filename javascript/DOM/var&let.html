@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // here var is treated as global variable 
+        if(10>4)
+        {
+            var x =100
+            document.write(`${x} <br>`)
+        }
+        document.write(`${x} <br>`)
+        //  here we  cannot treat let as globle variable 
+        if(10>4)
+        {
+            let z = 200;
+            document.write(`${z} <br>`)
+        }
+        document.write(z)
+
+
+
+    </script>
+</body>
+</html>

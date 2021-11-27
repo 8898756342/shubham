@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            class student{
+
+                name;
+                chem;
+                phy;
+                
+                maths;
+                deatil = function()
+                {
+                    document.write(`${this.name}`);
+                    document.write(`${this.chem}`);
+                    document.write(`${this.phy}`);
+                    document.write(`${this.maths}`);
+                    
+                }
+                per =function(){
+                    var sum = this.maths+this.chem+this.phy;
+                    var y = (sum)/300*100;
+                    document.write(`${this.name} = ${this.y} `)
+                } 
+                
+            }
+            //object creation and value adding 
+
+
+            var s =new student();
+            s.chem=45;
+            s.maths=56;
+            s.phy =87;
+            s.name="shubham";
+            s.per();
+            var s2 =new student();
+            s2.maths=56;
+            s2.chem=45;
+            s2.phy =87;
+            s2.name="shubham";
+            s2.per();
+            var s3 =new student();
+            s3.chem=45;
+            s3.maths=56;
+            s3.phy =87;
+            s3.name="shubham";
+            s3.per();
+            
+            
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- filter iterrate the array from first data to last data and it return all the data 
+      which passes the ccondition -->
+      <script>
+        let x = [100,200,3,4,5,6,7,12,44,56,12];
+        let res =  x.filter(n => n >30)
+        let res1 = x.filter(function(n){
+            if(n>30){
+            document.write(`${n} <br>`);
+            }
+        })
+        document.write(res)  
+
+
+      </script>
+</body>
+</html>

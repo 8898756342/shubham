@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1{
+            border: 2px solid black;
+            height: 200px;
+            margin: 5px;
+            width: 300px;
+            padding: 20px;
+
+        }
+        #d2{
+            border:  2px solid red;
+            height: 200px;
+            margin: 5px;
+            width: 300px;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="d1">
+        <h1>div 1</h1>
+    </div>
+    <div id="d2">
+        <h1>div 2</h1>
+    </div>
+    <h1>html</h1>
+    <script>
+
+        var div = document.getElementsByTagName("div");
+        var h1 = document.getElementsByTagName("h1");
+
+        div[0].insertBefore(h1[2],h1[0]);
+
+
+    </script>
+</body>
+</html>

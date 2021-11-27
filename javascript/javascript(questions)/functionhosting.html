@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // fat arrow function (exceptions)
+
+        sum(3,4)
+        const sum = (a,b) =>{       //first exception for hosting
+            add= a+b;               // function call must be define after the declaration 
+            console.log(add);
+        }
+        z(6,9);
+        const z = function (a,b){
+            add = a+b;              // second exception in funcion expression 
+            console.log(add);          // function call must be define after the declaration 
+        }
+        asc(49,3);
+        function asc(r,a){
+            add = a+b;              // function hosting is working only in this type of declaration 
+            console.log(add);       // no parenthesis before the function declaration 
+                                    //
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

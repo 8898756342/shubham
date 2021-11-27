@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  puch function is use to puch the data in the end of the array its also modify the length of an array  -->
+    <!-- pop remove current last data from the array and modify the length of orignal array  -->
+    <script>
+        var days = ["s","m","t"];
+        days.push("w","th");
+        document.write(`${days}<br>`)
+        document.write(`${days.pop()}<br> is a pop element `);
+
+        // shift and unshift
+        //  unshift function is use to add one or more data at the starting of and array it will modify the length of the orignal array
+        // shift function remove the current array first data from the array it modify the length the array
+        
+        var num =  [3,4,5,6,7,8,9];
+        num.unshift(1,3,4);
+        document.write(`${num}<br>`);
+        document.write(`${num.shift()}<br>`);
+        
+
+
+
+    </script>
+</body>
+</html>

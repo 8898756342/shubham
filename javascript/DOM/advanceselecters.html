@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid red;
+            width: 50%;
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>before div tag</h1>
+    <div id="d1">
+        <h1 id="heading">react</h1>
+        <h1>node</h1>
+        <h1>dom</h1>
+        <h1>mongodb</h1>
+
+    </div>
+    <h1>after div tag</h1>
+    <script>
+        var div = document.getElementById("d1");
+        var h1 = document.getElementById("heading");
+        console.log(div.children);
+        console.log(h1.parentElement);
+        console.log(div.previousElementSibling);
+        console.log(div.nextElementSibling);
+        console.log(div.firstElementChild);
+        console.log(div.lastElementChild);
+
+
+    </script>
+</body>
+</html>

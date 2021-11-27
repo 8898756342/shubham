@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <h1>document object model</h1>
+        <h1>hello</h1>
+        <button onclick="red()">red</button></br></br>
+        <button onclick="yellow()">yellow</button></br></br>
+        <button onclick="color('pink')"> change color</button>
+        <input type="text" class="type" placeholder="search here">
+
+       
+
+    <script>
+        let y = document.getElementsByTagName("h1");
+        console.log(y);
+        function red()
+        {
+            y[0].style.color = "red"
+            y[1].style.color = "red"
+        }
+        function yellow()
+        {
+            y[0].style.color = "yellow";
+            y[1].style.color = "yellow";
+        }
+        function color(clrname)
+        {
+              y[0].style.color=clrname;  
+              y[1].style.color=clrname;  
+              
+        }
+        
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 30px;
+            font-weight: 500;
+        }
+        .con{
+            position: absolute;
+            top: 40%;
+            bottom: 50%;
+            transform: translate(50%,50%);
+            width: 70%;
+
+        }
+        ul li{
+            display: inline;
+            text-align: center;
+        }
+        a{
+            display: inline;
+            width: 25%;
+            padding: auto;
+            margin: 32px 32px;
+            text-decoration: none;
+            color: black;
+        }
+        hr{
+            height: 70px;
+            width: 15%;
+            margin: -50px 0;
+            background: linear-gradient(to right ,rgb(134, 79, 79) ,green) ;
+            border: none;
+            border-radius: 50px;
+            transition: 0.5s ease-in-out;
+        }
+        .two:hover ~ hr{
+            margin-left: 15%;
+        }
+        .three:hover ~ hr{
+            margin-left: 30%;
+        }
+        .four:hover ~ hr{
+            margin-left: 45%;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+            <div class="con">
+                <ul>
+                    <li class="one" ><a href="#">home</a></li>
+                    <li class="two"><a href="#">about</a></li>
+                    <li class="three"><a href="#">contact</a></li>
+                    <li class="four"><a href="#">login</a></li>
+                    <hr/>
+                </ul>
+
+            </div>
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- find function will itrate the element till the condition is true hence it will just return one data that is very first occurence 
+    which satisfied the condition and then it will stop executing value   -->
+
+    <script>
+        var num = [1,12,23,23,12,235,545,4353,3523,3224,234,34,34];
+        var res = num.find(n => n>400);
+        var res1 =  num.find(function(n)
+        {
+            if(n>400){
+                document.write(`${n} <br>`)
+            }
+        })
+        document.write(res)
+
+
+    </script>
+</body>
+</html>
